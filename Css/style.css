@@ -1,0 +1,638 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: #FEFAE0;
+}
+
+/* header (navbar) */
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+	width: 100%;
+	height: 90px;
+	background-color: #DDA15E;
+    transition: all .50s ease;
+}
+.navbarDernocua{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.Logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.Logo img{
+	height: 80px;
+}
+.Logo img:hover{
+	transform: scale(1.1);
+}
+.Links{
+    float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.Links{
+	list-style: none;
+	padding: 0 10px;
+}
+.Links li{
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.Links li:hover{
+	transform: scale(1.1);
+}
+.Links li a{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+    text-decoration: none   ;
+}
+.LinksMobile li a {
+    text-decoration: none;
+}
+
+.Links li a:hover{
+    text-shadow: #da00e5 1px 1px;
+    color: #050038;
+	transform: scale(1.1);
+}
+
+.active {
+    color: #050038;
+}
+
+/* color base texto navbar - inicio */
+    .df {
+color: #283618;
+}   
+
+.list {
+    float: right;
+    padding: 20px 20px 0;
+}
+.list label img {
+    height: auto;
+    width: 50px;
+    display: none;
+}
+.InputList {
+    display: none;
+}
+
+/* Footer */
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: #606c38;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+}
+.LogoFooter {
+    height: 200px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0 20px 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+.Face i:hover {
+    color: #F3FF86;
+    transform: scale(1.1);
+}
+.Ig i:hover {
+    color: 	#F3FF86;
+    transform: scale(1.1);
+}
+
+.footer-bottom{
+    color: #fff;
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* titulo */
+.ContenedorTitulo {
+    overflow: hidden;
+}
+.titulo {
+    font-size: 10rem;
+    position: relative;
+    text-align: center;
+    color: #030028;
+    background: none;
+    animation: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300% 
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.titulo.noIndex {
+    margin: 15% auto 15% auto;
+}
+
+/* Index */
+/* main */
+.LogoIndex {
+    display: flex;
+    position: relative;
+    margin: 12% auto 0% auto;
+    height: 280px;
+    width: 280px;
+}
+
+.hrIndex {
+    background-color: black;
+    position: relative;
+    height: 3px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 5s;
+    animation-name: slidein;
+}
+
+.Br-Bs {
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 0 180px 0;
+    animation: 4s;
+    animation-name: slidein;
+}
+
+/* Presentación */
+.Presentación {
+    position: relative;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: #99a670;
+    width: 100%;
+}
+.Presentación h2 {
+    font-size: 2rem;
+}
+.pPresentación {
+    width: 800px;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
+.Disposición {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    margin: 0% 35%;
+    background-color: #8c9c59;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+/* section hs y ub */
+.HsUbi figure {
+    display: flex;
+    margin: 8% auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerImg1 {
+    position: relative;
+    width: 50%;
+    max-width: 733px;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+}
+.ContainerImg2 {
+    position: relative;
+    width: 50%;
+    max-width: 733px;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+.FHis, .FUbi {
+    display: block;
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px #00000080;
+    cursor: pointer;
+}
+.CapaHis, .CapaUbi{
+    position: absolute;
+    background: #00000080;
+    color: #f1f1f1;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 50% 50% 0 0 ;
+}
+
+.LinkHover {
+    color: #FFFFAB;
+    font-size: 2rem;
+    font-family: "Open Sans";
+}
+
+.ContainerImg1:hover .CapaHis {
+    opacity: 1;
+}
+.ContainerImg2:hover .CapaUbi {
+    opacity: 1;
+}
+
+/* Llama a Producto */
+.ProductoLink {
+    display: flex;
+    justify-content: center;
+}
+.ProductoLink h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5% 0;
+}
+.ProductoLink div img {
+    margin: 0 0 40% 0;
+}
+
+.TituloExplora:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+/* Contacto */
+.M-Contacto div {
+    position: relative;
+    text-align: center;
+}
+.M-Contacto div h2 {
+    font-size: 2.5rem;
+}
+.M-Contacto div p {
+    font-size: 1.2rem;
+}
+.cuerpo {
+    display: flex;
+    justify-content: center;
+}
+.S-Formulario {
+    background-color: #E3A772;
+    border: #572b05 solid;
+    display: flex;
+    padding: 5%;
+    height: 70%;
+    width: 40%;
+    border-radius: 2%;
+    margin: 5%;
+    justify-content: center;
+}
+
+.Formulario {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Formulario h5 {
+    margin: 1%;
+    font-size: 1.1rem;
+}
+.Formulario input, select{
+    margin:1% auto 5% 1%;
+    height: 45%;
+    width: 100%;
+    background-color:antiquewhite;
+    border: #000 solid;
+}
+.Formulario textarea {
+    margin:1% auto 0% 1%;
+    width: 100%;
+    height: 50%;
+    background-color:antiquewhite;
+    border: #000 solid;
+}
+.contenido {
+    display: flex;
+    align-items: center;
+    margin:1%;
+}
+
+#checkbox{
+    margin: 0%;
+    width: 10%;
+    height: 60%;
+}
+.Nhover:hover , .Mhover:hover , .Thover:hover , .Chover:hover {
+    transform: scale(1);
+    color: #050038;
+    text-shadow: #ffffff 1px 1px;
+}
+
+/* Nosotros */
+.M-Nosotros  h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0% auto 4% auto;
+}
+.N-Dernocua {
+    text-align: center;
+    font-size: 3rem;
+    background-color:#8D80AD;
+    padding: 2%;
+    color: 010029;
+    font-family: 'Pacifico', cursive;
+}
+.Historia {
+    text-align: center;
+}
+.H-p1 p, .H-p2  p, .H-p4 p {
+    font-size: 1.2rem;
+    color: #000;
+    padding: 5%;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 60%;
+    margin: 0% auto;
+}
+
+.H-p3 p {
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+.H-p3 h4 {
+    padding: 3%;
+    font-size: 1.6rem
+}
+.H-p4 {
+    padding: 1%;
+}
+
+.H-p5 {
+    font-size: 1.8rem;
+    margin: 0% auto 8% auto;
+}
+.H-p6 {
+    padding: 5%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    background-color: #39210c7b;
+    margin: 0% 5%;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.Historia hr {
+    width: 80%;
+    height: 3.5px;
+    margin: 1% auto;
+    background-color: #000;
+    display: inline-block;
+    justify-content: center;
+}
+
+.agradecimiento {
+    padding: 5%;
+    margin: 10% 10% 15% 10%;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 0px 15px 25px #00000080;
+    background-color: #d28400;
+    background-image: linear-gradient(132deg, #d28400 0%, #715900 100%);    
+    text-align: center;
+}
+
+/* Ubicación */
+.UbicacionesPresentación h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0% auto 4% auto;
+}
+.UbicacionesPresentación p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+.carouseldiv {
+    background-color: #000;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+}
+.TextCarousel {
+    color: black;
+}
+.TextCarousel a {
+    text-decoration: none;
+    color: #c800ff;
+}
+
+
+/* Productos */
+
+.M-Productos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0% auto 4% auto;
+}
+.GridContainer {
+    width: 100%;
+    margin: 0 auto 20% auto;
+    max-width: 1240px;
+}
+.ProductosSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.ProductosSection__ContenedorImg img{
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 26px 24px -16px rgb(0 0 0 / 40%);
+    transition: all .17s ease-in-out;
+}
+
+.ProductosSection__Producto1 img:hover,  .ProductosSection__Producto2 img:hover, .ProductosSection__Producto3 img:hover, .ProductosSection__Producto4 img:hover, .ProductosSection__Producto5 img:hover, .ProductosSection__Producto6 img:hover {
+    transform: translateY(-10px);
+    padding: 2px;
+    background-color: blueviolet;
+}         
+
+.ProductosSection__Producto1:hover,  .ProductosSection__Producto2:hover, .ProductosSection__Producto3:hover, .ProductosSection__Producto4:hover, .ProductosSection__Producto5:hover, .ProductosSection__Producto6:hover {
+    color: blueviolet;
+}         
+
+/* Media queries */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    /* Navbar */
+    .Links {
+        display: none;
+    }
+    .list label img {
+        display: block;
+    }
+    .NavbarMenuMobile {
+        position: absolute;
+        top: 100%;
+        margin-top: 1%;
+        right: 2%;
+        width: 270px;
+        height: auto;
+        background-color: #DDA15E;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all .50s;
+        clip-path: circle(0 at center);
+    }
+    .LinksMobile {
+        padding-left: 0rem; 
+        margin-bottom: 0rem; 
+    }
+    .LinksMobile a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s;
+    }
+    .InputList:checked + .NavbarMenuMobile {
+        clip-path: circle(100% at center);
+    }
+    .tituloMobile {
+        font-size: 2.5rem;
+    }  
+    .ContenedorTitulo {
+        margin: 30% auto 15% auto;
+    }
+    /* Productos */
+    .ProductosSection {
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    /* Navbar */
+    .Links {
+        display: none;
+    }
+    .list label img {
+        display: block;
+    }
+    .NavbarMenuMobile {
+        position: absolute;
+        top: 100%;
+        margin-top: 1%;
+        right: 2%;
+        width: 270px;
+        height: auto;
+        background-color: #DDA15E;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all .50s;
+        clip-path: circle(0 at center);
+    }
+    .LinksMobile {
+        padding-left: 0rem; 
+        margin-bottom: 0rem; 
+    }
+    .LinksMobile a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s;
+    }
+    .InputList:checked + .NavbarMenuMobile {
+        clip-path: circle(100% at center);
+    }
+    .tituloMobile {
+        font-size: 2rem;
+    }  
+
+    
+    /* Productos */
+    .ProductosSection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }    
+}
+
+@media only screen and (min-width:992px) {
+    .NavbarMenuMobile {
+        display: none;
+    }
+}
