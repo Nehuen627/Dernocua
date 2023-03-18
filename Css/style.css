@@ -123,6 +123,7 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 28px 0 20px 0;
+    padding-left: 0;
 }
 .socials li{
     margin: 0 10px;
@@ -160,7 +161,10 @@ footer{
     text-transform: uppercase;
     font-weight: 200;
 }
-
+.footer-bottom span a {
+    text-decoration: none;
+    color: blueviolet;
+}
 /* titulo */
 .ContenedorTitulo {
     overflow: hidden;
@@ -341,7 +345,7 @@ footer{
     justify-content: center;
 }
 .S-Formulario {
-    background-color: #E3A772;
+    background-color: #eeb686;
     border: #572b05 solid;
     display: flex;
     padding: 5%;
@@ -491,6 +495,9 @@ footer{
     text-decoration: none;
     color: #c800ff;
 }
+.InfoMobile {
+    display: none;
+}
 
 
 /* Productos */
@@ -505,12 +512,6 @@ footer{
     margin: 0 auto 20% auto;
     max-width: 1240px;
 }
-.ProductosSection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-}
-
 .ProductosSection__ContenedorImg img{
     height: auto;
     width: 100%;
@@ -574,11 +575,31 @@ footer{
     .ContenedorTitulo {
         margin: 30% auto 15% auto;
     }
-    /* Productos */
-    .ProductosSection {
-        display: grid;
-        grid-template-columns: 1fr;
-    }    
+    /* productos */
+    .M-Productos h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    } 
+    /* Ubicaciones */
+    .UbicacionesPresentación h2 {
+        font-size: 1.5rem;
+    }
+    .UbicacionesPresentación p {
+        font-size: 1rem;
+    }
+    .InfoMobile {
+        display: block;
+        text-align: center;
+    }
+    .Bariloche, .Bolsón {
+        padding: 10%;
+    }
+    .InfoPc {
+        display: none;
+    }
+    .LinkContacto {
+        text-decoration: none;
+    }
 }
 
 
@@ -619,16 +640,11 @@ footer{
         clip-path: circle(100% at center);
     }
     .tituloMobile {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }  
-
-    
-    /* Productos */
-    .ProductosSection {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
-    }    
+    .ContenedorTitulo {
+        margin: 15% auto 10% auto;
+    }
 }
 
 @media only screen and (min-width:992px) {
