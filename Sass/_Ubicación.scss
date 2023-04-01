@@ -1,0 +1,30 @@
+
+/* Ubicación */
+.UbicacionesPresentación  {
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 0% auto 4% auto;
+    }
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+    }
+}
+.InfoMobile {
+    display: none;
+}
+.carouseldiv {
+    background-color: $Negro;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    .TextCarousel {
+        color: $Negro;
+        a {
+            text-decoration: none;
+            color: $Rosa2;
+        }
+    }
+}

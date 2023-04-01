@@ -1,0 +1,384 @@
+/* Media queries */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    /* Navbar */
+    header {
+        .navbarDernocua {
+            nav {
+                .Links {
+                    display: none;
+                }
+            }
+            .list {
+                label img {
+                    display: block;
+                }
+                .NavbarMenuMobile {
+                    position: absolute;
+                    top: 100%;
+                    margin-top: 1%;
+                    right: 2%;
+                    width: 270px;
+                    height: auto;
+                    background-color: $NaranjaCrema;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    transition: all .50s;
+                    clip-path: circle(0 at center);
+                    .LinksMobile {
+                        padding-left: 0rem; 
+                        margin-bottom: 0rem; 
+                        a {
+                            display: block;
+                            margin: 12px 0;
+                            padding: 0px 25px;
+                            transition: all .50s;
+                            color: $Negro;
+                        }
+                    }
+                }
+                .InputList:checked + .NavbarMenuMobile {
+                    clip-path: circle(100% at center);
+                }
+            }
+        }
+    }
+    .ContenedorTitulo {
+        margin: 30% auto 15% auto;
+        .tituloMobile {
+            font-size: 2.5rem;
+        }  
+    }
+    /* index */
+    .M-Index {
+        .LogoIndex {
+            margin: 40% auto 0 auto;
+        }
+        .ContenedorTitulo {
+            .hrIndex {
+                width: 60%;
+            }
+            .Br-Bs {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .Presentación {
+        h2 {
+            font-size: 1.4rem;
+        }
+        .pPresentación {
+            width: 80%;
+            font-size: 1rem;
+        }
+        .Disposición {
+            font-size: 1.2rem;
+            margin: 0% 20%;
+        }
+    }
+    
+    .HsUbi {
+        figure { 
+            flex-direction: column;
+            .ContainerImg1 {
+                width: 95%;
+                margin:10px 15px;
+                .FHis {
+                    height: 300px;
+                }
+                .CapaHis {
+                    opacity: 1;
+                    h3 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .ContainerImg2 {
+                width: 95%;
+                margin:10px 15px;
+                .FUbi {
+                    height: 300px;
+                }
+                .CapaUbi {
+                    opacity: 1;
+                    h3 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .ContainerImg1:hover .CapaHis {
+                opacity: 0; /* para que no funcione el hover */
+            }
+            .ContainerImg2:hover .CapaUbi {
+                opacity: 0;
+            }
+        }
+    }
+    .ProductoLink {
+        h2 {
+            font-size: 1.5rem;
+        }
+        .ImgExplora {
+            a {
+                img {
+                    margin: 0 auto 40% auto;
+                }
+            }
+        } 
+        .TituloExplora:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+    }
+    
+
+    /* productos */
+    .M-Productos h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    } 
+    /* Ubicaciones */
+    .UbicacionesPresentación {
+        h2 {
+            font-size: 1.5rem;
+        }
+        .InfoPc {
+            display: none;
+        }
+    }
+    .InfoMobile {
+        display: block;
+        text-align: center;s
+        .Bariloche, .Bolsón {
+            padding: 10%;
+        }
+        .LinkContacto {
+            text-decoration: none;
+        }
+    }
+    /* Contacto */
+    .M-Contacto {
+        div {
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        .Contacto-Intro {
+            h2 {
+                padding: 5%;
+            }
+            p {
+                padding: 5%;
+            }
+        }
+    }
+    .cuerpo {
+        .S-Formulario {
+            width: 90%;
+            .Formulario {
+                div h5 {
+                font-size: 1rem;
+                margin-top: 5%;
+                }
+                input, select{
+                    height: 60%;
+                }
+                .Enter input {
+                    height: 60%;
+                }
+                .contenido p {
+                    font-size: 0.8rem;
+                }
+                #checkbox{
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+    /* Nosotros */
+    .M-Nosotros h2 {
+        font-size: 1.4rem;
+    }
+    .Historia {
+        .H-p1 P, .H-p2 P, .H-p3 P, .H-p4 P, .H-p6 P {
+            font-size: 1.2rem; 
+        }
+        .H-p3 p {
+            margin: 5% 10% 0 10%;
+        }
+    }
+    .agradecimiento h3 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    /* Navbar */
+    header {
+        .navbarDernocua {
+            nav {
+                .Links {
+                    display: none;
+                }
+            }
+            .list {
+                label img {
+                    display: block;
+                }
+                .NavbarMenuMobile {
+                    position: absolute;
+                    top: 100%;
+                    margin-top: 1%;
+                    right: 2%;
+                    width: 270px;
+                    height: auto;
+                    background-color: $NaranjaCrema;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    transition: all .50s;
+                    clip-path: circle(0 at center);
+                    .LinksMobile {
+                        padding-left: 0rem; 
+                        margin-bottom: 0rem; 
+                        a {
+                            display: block;
+                            margin: 12px 0;
+                            padding: 0px 25px;
+                            transition: all .50s;
+                            color: $Negro;
+                        }
+                    }
+                }
+                .InputList:checked + .NavbarMenuMobile {
+                    clip-path: circle(100% at center);
+                }
+            }
+        }
+    }
+    .ContenedorTitulo {
+        margin: 15% auto 10% auto;
+        .tituloMobile {
+            font-size: 4rem;
+        }  
+    }
+    /* index */
+    .M-Index {
+        .LogoIndex {
+            margin: 20% auto 0 auto;
+        }
+        .ContenedorTitulo {
+            .hrIndex {
+                width: 60%;
+            }
+            .Br-Bs {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .Presentación {
+        h2 {
+            font-size: 1.5rem;
+        }
+        .pPresentación {
+            width: 80%;
+            font-size: 1.2rem;
+        }
+        .Disposición {
+            font-size: 1.3rem;
+            margin: 0% 25%;
+        }
+    }
+    
+    .HsUbi {
+        figure { 
+            flex-direction: column;
+            .ContainerImg1 {
+                width: 95%;
+                margin:10px 15px;
+                .FHis {
+                    height: 500px;
+                }
+                .CapaHis {
+                    opacity: 1;
+                    h3 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .ContainerImg2 {
+                width: 95%;
+                margin:10px 15px;
+                .FUbi {
+                    height: 500px;
+                }
+                .CapaUbi {
+                    opacity: 1;
+                    h3 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .ContainerImg1:hover .CapaHis {
+                opacity: 0; /* para que no funcione el hover */
+            }
+            .ContainerImg2:hover .CapaUbi {
+                opacity: 0;
+            }
+        }
+    }
+    .ProductoLink {
+        h2 {
+            font-size: 1.5rem;
+        }
+        .ImgExplora {
+            a {
+                img {
+                    margin: 0 auto 40% auto;
+                }
+            }
+        } 
+        .TituloExplora:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+    }
+    /* Contacto */
+    .Contacto-Intro {
+        h2 {
+            font-size: 1rem;
+            padding: 5%;
+        }
+        p {
+            padding: 5%;
+        }
+    }
+    .cuerpo {
+        .S-Formulario {
+            width: 80%;
+            .Formulario {
+                input, select {
+                    height: 45%;
+                }
+                .Enter input {
+                    height: 60%;
+                }
+                #checkbox{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .NavbarMenuMobile {
+        display: none;
+    }
+}

@@ -1,0 +1,850 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #FEFAE0;
+}
+
+/* header (navbar) */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 90px;
+  background-color: #DDA15E;
+  transition: all 0.5s ease;
+}
+header .navbarDernocua {
+  max-width: 100%;
+  padding: 0 10px;
+  margin: auto;
+}
+header .navbarDernocua .Logo {
+  float: left;
+  padding: 5px 20px 0;
+}
+header .navbarDernocua .Logo img {
+  height: 80px;
+}
+header .navbarDernocua .Logo img:hover {
+  transform: scale(1.1);
+}
+header .navbarDernocua nav .Links {
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  z-index: 1000;
+  list-style: none;
+  padding: 0 10px;
+}
+header .navbarDernocua nav .Links li {
+  position: relative;
+  transition: 0.3s linear;
+  z-index: 1000;
+}
+header .navbarDernocua nav .Links li a {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: 0.3s linear;
+  text-decoration: none;
+}
+header .navbarDernocua nav .Links li .active {
+  color: #050038;
+}
+header .navbarDernocua nav .Links li .df {
+  color: #283618;
+}
+header .navbarDernocua nav .Links li a:hover {
+  text-shadow: #da00e5 1px 1px;
+  color: #050038;
+  transform: scale(1.1);
+}
+header .navbarDernocua nav .Links li li:hover {
+  transform: scale(1.1);
+}
+header .navbarDernocua .list {
+  float: right;
+  padding: 20px 20px 0;
+}
+header .navbarDernocua .list label img {
+  height: auto;
+  width: 50px;
+  display: none;
+}
+header .navbarDernocua .list .InputList {
+  display: none;
+}
+header .navbarDernocua .list .LinksMobile li a {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #606c38;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+footer .footer-content .LogoFooter {
+  height: 200px;
+}
+footer .footer-content .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 28px 0 20px 0;
+  padding-left: 0;
+}
+footer .footer-content .socials li {
+  margin: 0 10px;
+}
+footer .footer-content .socials li a {
+  text-decoration: none;
+  color: #000;
+}
+footer .footer-content .socials li a i {
+  font-size: 2rem;
+  transition: color 0.4s ease;
+}
+footer .footer-content .socials li .Face i:hover {
+  color: #F3FF86;
+  transform: scale(1.1);
+}
+footer .footer-content .socials li .Ig i:hover {
+  color: #F3FF86;
+  transform: scale(1.1);
+}
+footer .footer-bottom {
+  color: #fff;
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+footer .footer-bottom p span {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+footer .footer-bottom p span a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+/* titulo */
+.ContenedorTitulo {
+  overflow: hidden;
+}
+.ContenedorTitulo .titulo {
+  font-size: 10rem;
+  position: relative;
+  text-align: center;
+  color: #030028;
+  background: none;
+  animation: 2s;
+  animation-name: slidein;
+}
+.ContenedorTitulo .titulo.noIndex {
+  margin: 15% auto 15% auto;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* main */
+.M-Index .LogoIndex {
+  display: flex;
+  position: relative;
+  margin: 12% auto 0% auto;
+  height: 280px;
+  width: 280px;
+}
+.M-Index .ContenedorTitulo .hrIndex {
+  background-color: #000;
+  position: relative;
+  height: 3px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: 5s;
+  animation-name: slidein;
+}
+.M-Index .ContenedorTitulo .Br-Bs {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 0 180px 0;
+  animation: 4s;
+  animation-name: slidein;
+}
+
+/* Presentación */
+.Presentación {
+  position: relative;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  background-color: #99a670;
+  width: 100%;
+}
+.Presentación h2 {
+  font-size: 2rem;
+}
+.Presentación .pPresentación {
+  width: 80%;
+  margin: 0% auto 1% auto;
+  color: #000;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+}
+.Presentación .Disposición {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  margin: 0% 35%;
+  background-color: #8c9c59;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+/* section hs y ub */
+.HsUbi figure {
+  display: flex;
+  margin: 8% auto;
+  justify-content: center;
+  align-items: center;
+}
+.HsUbi figure .ContainerImg1 {
+  position: relative;
+  width: 50%;
+  max-width: 733px;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+.HsUbi figure .ContainerImg1 .FHis {
+  display: block;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5019607843);
+  cursor: pointer;
+}
+.HsUbi figure .ContainerImg2 {
+  position: relative;
+  width: 50%;
+  max-width: 733px;
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+}
+.HsUbi figure .ContainerImg2 .FUbi {
+  display: block;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5019607843);
+  cursor: pointer;
+}
+.HsUbi figure .ContainerImg1:hover .CapaHis {
+  opacity: 1;
+}
+.HsUbi figure .ContainerImg2:hover .CapaUbi {
+  opacity: 1;
+}
+.HsUbi figure .CapaHis, .HsUbi figure .CapaUbi {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5019607843);
+  color: #f1f1f1;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 50% 50% 0 0;
+}
+.HsUbi figure .LinkHover {
+  color: #FFFFAB;
+  font-size: 2rem;
+  font-family: "Open Sans";
+}
+
+/* Llama a Producto */
+.ProductoLink {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ProductoLink h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 0;
+}
+.ProductoLink .ImgExplora {
+  display: flex;
+  justify-content: center;
+}
+.ProductoLink .ImgExplora a {
+  width: 50%;
+  height: auto;
+}
+.ProductoLink .ImgExplora a img {
+  margin: 0 auto 40% auto;
+  width: 100%;
+  height: auto;
+}
+.ProductoLink .TituloExplora:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* Contacto */
+.M-Contacto div {
+  position: relative;
+  text-align: center;
+}
+.M-Contacto div h2 {
+  font-size: 2.5rem;
+}
+.M-Contacto div p {
+  font-size: 1.2rem;
+}
+
+.cuerpo {
+  display: flex;
+  justify-content: center;
+}
+.cuerpo .S-Formulario {
+  background-color: #eeb686;
+  border: #572b05 solid;
+  display: flex;
+  padding: 5%;
+  height: 70%;
+  width: 60%;
+  border-radius: 2%;
+  margin: 5%;
+  justify-content: center;
+}
+.cuerpo .S-Formulario .Formulario {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cuerpo .S-Formulario .Formulario div h5 {
+  margin: 1%;
+  font-size: 1.1rem;
+}
+.cuerpo .S-Formulario .Formulario input, .cuerpo .S-Formulario .Formulario select {
+  margin: 1% auto 5% 1%;
+  height: 45%;
+  width: 100%;
+  background-color: antiquewhite;
+  border: #000 solid;
+}
+.cuerpo .S-Formulario .Formulario textarea {
+  margin: 1% auto 0% 1%;
+  width: 100%;
+  background-color: antiquewhite;
+  border: #000 solid;
+}
+.cuerpo .S-Formulario .Formulario .contenido {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+.cuerpo .S-Formulario .Formulario #checkbox {
+  margin: 0%;
+  transform: scale(2);
+}
+.cuerpo .S-Formulario .Formulario .Nhover:hover, .cuerpo .S-Formulario .Formulario .Mhover:hover, .cuerpo .S-Formulario .Formulario .Thover:hover, .cuerpo .S-Formulario .Formulario .Chover:hover {
+  transform: scale(1.3);
+  color: #050038;
+  text-shadow: #fff 1px 1px;
+}
+
+/* Nosotros */
+.M-Nosotros h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0% auto 4% auto;
+}
+
+.Historia {
+  text-align: center;
+}
+.Historia hr {
+  width: 80%;
+  height: 3.5px;
+  margin: 1% auto;
+  background-color: #000;
+  display: inline-block;
+  justify-content: center;
+}
+.Historia .N-Dernocua {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #8D80AD;
+  padding: 2%;
+  color: 10029;
+  font-family: "Pacifico", cursive;
+}
+.Historia .H-p1 p, .Historia .H-p2 p, .Historia .H-p4 p {
+  font-size: 1.2rem;
+  color: #000;
+  padding: 5%;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 60%;
+  margin: 0% auto;
+}
+.Historia .H-p3 p {
+  margin-top: 5%;
+  font-size: 1.4rem;
+}
+.Historia .H-p3 h4 {
+  padding: 3%;
+  font-size: 1.6rem;
+}
+.Historia .H-p4 {
+  padding: 1%;
+}
+.Historia .H-p5 {
+  font-size: 1.8rem;
+  margin: 0% auto 8% auto;
+}
+.Historia .H-p6 {
+  padding: 5%;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: rgba(57, 33, 12, 0.4823529412);
+  margin: 0% 5%;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.agradecimiento {
+  padding: 5%;
+  margin: 10% 10% 15% 10%;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5019607843);
+  background-color: #d28400;
+  background-image: linear-gradient(132deg, #d28400 0%, #715900 100%);
+  text-align: center;
+}
+
+/* Ubicación */
+.UbicacionesPresentación h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0% auto 4% auto;
+}
+.UbicacionesPresentación p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+.InfoMobile {
+  display: none;
+}
+
+.carouseldiv {
+  background-color: #000;
+  padding: 0.5%;
+  border-radius: 10px;
+  margin-bottom: 20%;
+}
+.carouseldiv .TextCarousel {
+  color: #000;
+}
+.carouseldiv .TextCarousel a {
+  text-decoration: none;
+  color: #c800ff;
+}
+
+/* Productos */
+.M-Productos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0% auto 4% auto;
+}
+
+.GridContainer {
+  width: 100%;
+  margin: 0 auto 20% auto;
+  max-width: 1240px;
+}
+.GridContainer .ProductosSection__ContenedorImg img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  box-shadow: 0 26px 24px -16px rgba(0, 0, 0, 0.4);
+  transition: all 0.17s ease-in-out;
+}
+.GridContainer .ProductosSection__Producto1 img:hover, .GridContainer .ProductosSection__Producto2 img:hover, .GridContainer .ProductosSection__Producto3 img:hover, .GridContainer .ProductosSection__Producto4 img:hover, .GridContainer .ProductosSection__Producto5 img:hover, .GridContainer .ProductosSection__Producto6 img:hover {
+  transform: translateY(-10px);
+  padding: 2px;
+  background-color: blueviolet;
+}
+.GridContainer .ProductosSection__Producto1:hover, .GridContainer .ProductosSection__Producto2:hover, .GridContainer .ProductosSection__Producto3:hover, .GridContainer .ProductosSection__Producto4:hover, .GridContainer .ProductosSection__Producto5:hover, .GridContainer .ProductosSection__Producto6:hover {
+  color: blueviolet;
+}
+
+/* Media queries */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  /* Navbar */
+  header .navbarDernocua nav .Links {
+    display: none;
+  }
+  header .navbarDernocua .list label img {
+    display: block;
+  }
+  header .navbarDernocua .list .NavbarMenuMobile {
+    position: absolute;
+    top: 100%;
+    margin-top: 1%;
+    right: 2%;
+    width: 270px;
+    height: auto;
+    background-color: #DDA15E;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 0.5s;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+  }
+  header .navbarDernocua .list .NavbarMenuMobile .LinksMobile {
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+  }
+  header .navbarDernocua .list .NavbarMenuMobile .LinksMobile a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s;
+    color: #000;
+  }
+  header .navbarDernocua .list .InputList:checked + .NavbarMenuMobile {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  .ContenedorTitulo {
+    margin: 30% auto 15% auto;
+  }
+  .ContenedorTitulo .tituloMobile {
+    font-size: 2.5rem;
+  }
+  /* index */
+  .M-Index .LogoIndex {
+    margin: 40% auto 0 auto;
+  }
+  .M-Index .ContenedorTitulo .hrIndex {
+    width: 60%;
+  }
+  .M-Index .ContenedorTitulo .Br-Bs {
+    font-size: 1.1rem;
+  }
+  .Presentación h2 {
+    font-size: 1.4rem;
+  }
+  .Presentación .pPresentación {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .Presentación .Disposición {
+    font-size: 1.2rem;
+    margin: 0% 20%;
+  }
+  .HsUbi figure {
+    flex-direction: column;
+  }
+  .HsUbi figure .ContainerImg1 {
+    width: 95%;
+    margin: 10px 15px;
+  }
+  .HsUbi figure .ContainerImg1 .FHis {
+    height: 300px;
+  }
+  .HsUbi figure .ContainerImg1 .CapaHis {
+    opacity: 1;
+  }
+  .HsUbi figure .ContainerImg1 .CapaHis h3 {
+    font-size: 1.6rem;
+  }
+  .HsUbi figure .ContainerImg2 {
+    width: 95%;
+    margin: 10px 15px;
+  }
+  .HsUbi figure .ContainerImg2 .FUbi {
+    height: 300px;
+  }
+  .HsUbi figure .ContainerImg2 .CapaUbi {
+    opacity: 1;
+  }
+  .HsUbi figure .ContainerImg2 .CapaUbi h3 {
+    font-size: 1.6rem;
+  }
+  .HsUbi figure .ContainerImg1:hover .CapaHis {
+    opacity: 0; /* para que no funcione el hover */
+  }
+  .HsUbi figure .ContainerImg2:hover .CapaUbi {
+    opacity: 0;
+  }
+  .ProductoLink h2 {
+    font-size: 1.5rem;
+  }
+  .ProductoLink .ImgExplora a img {
+    margin: 0 auto 40% auto;
+  }
+  .ProductoLink .TituloExplora:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+  /* productos */
+  .M-Productos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  /* Ubicaciones */
+  .UbicacionesPresentación h2 {
+    font-size: 1.5rem;
+  }
+  .UbicacionesPresentación .InfoPc {
+    display: none;
+  }
+  .InfoMobile {
+    display: block;
+    text-align: center;
+  }
+  .InfoMobile s .Bariloche, .InfoMobile .Bolsón {
+    padding: 10%;
+  }
+  .InfoMobile .LinkContacto {
+    text-decoration: none;
+  }
+  /* Contacto */
+  .M-Contacto div h2 {
+    font-size: 1.5rem;
+  }
+  .M-Contacto div p {
+    font-size: 1rem;
+  }
+  .M-Contacto .Contacto-Intro h2 {
+    padding: 5%;
+  }
+  .M-Contacto .Contacto-Intro p {
+    padding: 5%;
+  }
+  .cuerpo .S-Formulario {
+    width: 90%;
+  }
+  .cuerpo .S-Formulario .Formulario div h5 {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+  .cuerpo .S-Formulario .Formulario input, .cuerpo .S-Formulario .Formulario select {
+    height: 60%;
+  }
+  .cuerpo .S-Formulario .Formulario .Enter input {
+    height: 60%;
+  }
+  .cuerpo .S-Formulario .Formulario .contenido p {
+    font-size: 0.8rem;
+  }
+  .cuerpo .S-Formulario .Formulario #checkbox {
+    transform: scale(0.8);
+  }
+  /* Nosotros */
+  .M-Nosotros h2 {
+    font-size: 1.4rem;
+  }
+  .Historia .H-p1 P, .Historia .H-p2 P, .Historia .H-p3 P, .Historia .H-p4 P, .Historia .H-p6 P {
+    font-size: 1.2rem;
+  }
+  .Historia .H-p3 p {
+    margin: 5% 10% 0 10%;
+  }
+  .agradecimiento h3 {
+    font-size: 1rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Navbar */
+  header .navbarDernocua nav .Links {
+    display: none;
+  }
+  header .navbarDernocua .list label img {
+    display: block;
+  }
+  header .navbarDernocua .list .NavbarMenuMobile {
+    position: absolute;
+    top: 100%;
+    margin-top: 1%;
+    right: 2%;
+    width: 270px;
+    height: auto;
+    background-color: #DDA15E;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 0.5s;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+  }
+  header .navbarDernocua .list .NavbarMenuMobile .LinksMobile {
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+  }
+  header .navbarDernocua .list .NavbarMenuMobile .LinksMobile a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s;
+    color: #000;
+  }
+  header .navbarDernocua .list .InputList:checked + .NavbarMenuMobile {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  .ContenedorTitulo {
+    margin: 15% auto 10% auto;
+  }
+  .ContenedorTitulo .tituloMobile {
+    font-size: 4rem;
+  }
+  /* index */
+  .M-Index .LogoIndex {
+    margin: 20% auto 0 auto;
+  }
+  .M-Index .ContenedorTitulo .hrIndex {
+    width: 60%;
+  }
+  .M-Index .ContenedorTitulo .Br-Bs {
+    font-size: 1.3rem;
+  }
+  .Presentación h2 {
+    font-size: 1.5rem;
+  }
+  .Presentación .pPresentación {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  .Presentación .Disposición {
+    font-size: 1.3rem;
+    margin: 0% 25%;
+  }
+  .HsUbi figure {
+    flex-direction: column;
+  }
+  .HsUbi figure .ContainerImg1 {
+    width: 95%;
+    margin: 10px 15px;
+  }
+  .HsUbi figure .ContainerImg1 .FHis {
+    height: 500px;
+  }
+  .HsUbi figure .ContainerImg1 .CapaHis {
+    opacity: 1;
+  }
+  .HsUbi figure .ContainerImg1 .CapaHis h3 {
+    font-size: 1.6rem;
+  }
+  .HsUbi figure .ContainerImg2 {
+    width: 95%;
+    margin: 10px 15px;
+  }
+  .HsUbi figure .ContainerImg2 .FUbi {
+    height: 500px;
+  }
+  .HsUbi figure .ContainerImg2 .CapaUbi {
+    opacity: 1;
+  }
+  .HsUbi figure .ContainerImg2 .CapaUbi h3 {
+    font-size: 1.6rem;
+  }
+  .HsUbi figure .ContainerImg1:hover .CapaHis {
+    opacity: 0; /* para que no funcione el hover */
+  }
+  .HsUbi figure .ContainerImg2:hover .CapaUbi {
+    opacity: 0;
+  }
+  .ProductoLink h2 {
+    font-size: 1.5rem;
+  }
+  .ProductoLink .ImgExplora a img {
+    margin: 0 auto 40% auto;
+  }
+  .ProductoLink .TituloExplora:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
+  /* Contacto */
+  .Contacto-Intro h2 {
+    font-size: 1rem;
+    padding: 5%;
+  }
+  .Contacto-Intro p {
+    padding: 5%;
+  }
+  .cuerpo .S-Formulario {
+    width: 80%;
+  }
+  .cuerpo .S-Formulario .Formulario input, .cuerpo .S-Formulario .Formulario select {
+    height: 45%;
+  }
+  .cuerpo .S-Formulario .Formulario .Enter input {
+    height: 60%;
+  }
+  .cuerpo .S-Formulario .Formulario #checkbox {
+    transform: scale(1.3);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .NavbarMenuMobile {
+    display: none;
+  }
+}/*# sourceMappingURL=MainSass.css.map */

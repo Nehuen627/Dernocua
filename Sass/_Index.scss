@@ -1,0 +1,157 @@
+/* main */
+.M-Index {
+    .LogoIndex {
+        display: flex;
+        position: relative;
+        margin: 12% auto 0% auto;
+        height: 280px;
+        width: 280px;
+    }
+    .ContenedorTitulo {
+        .hrIndex {
+            background-color: $Negro;
+            position: relative;
+            height: 3px;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            animation: 5s;
+            animation-name: slidein;
+        }
+        .Br-Bs {
+            position: relative;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0 0 180px 0;
+            animation: 4s;
+            animation-name: slidein;
+        }
+    }
+}
+
+/* Presentación */
+.Presentación {
+    position: relative;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: $VerdeClaro;
+    width: 100%;
+    h2 {
+        font-size: 2rem;
+    }
+    .pPresentación {
+        width: 80%;
+        margin: 0% auto 1% auto;
+        color: $Negro;
+        font-family: 'Pacifico', cursive;
+        font-size: 1.2rem;
+    }
+    .Disposición {
+        font-size: 1.5rem;
+        padding: 10px 0;
+        margin: 0% 35%;
+        background-color: $VerdeClaro2;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+    }
+}
+
+/* section hs y ub */
+.HsUbi {
+    figure {
+        display: flex;
+        margin: 8% auto;
+        justify-content: center;
+        align-items: center;
+        .ContainerImg1 {
+            position: relative;
+            width: 50%;
+            max-width: 733px;
+            display: flex;
+            margin-right: 15px;
+            align-items: center;
+            .FHis {
+                display: block;
+                width: 100%;
+                height: 550px;
+                border-radius: 15px;
+                box-shadow: 0px 15px 25px $NegroTransparente;
+                cursor: pointer;
+            }
+        }
+        .ContainerImg2 {
+            position: relative;
+            width: 50%;
+            max-width: 733px;
+            display: flex;
+            margin-left: 15px;
+            align-items: center;
+            .FUbi {
+                display: block;
+                width: 100%;
+                height: 550px;
+                border-radius: 15px;
+                box-shadow: 0px 15px 25px $NegroTransparente;
+                cursor: pointer;
+            }
+        }
+        .ContainerImg1:hover .CapaHis {
+            opacity: 1;
+        }
+        .ContainerImg2:hover .CapaUbi {
+            opacity: 1;
+        }
+        .CapaHis, .CapaUbi{
+            position: absolute;
+            background: $NegroTransparente;
+            color: $Hueso;
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            opacity:0;
+            font-size: 2rem;
+            color: $Blanco;
+            text-align: center;
+            padding: 50% 50% 0 0 ;
+        }
+        
+        .LinkHover {
+            color: $AmarilloCrema2;
+            font-size: 2rem;
+            font-family: "Open Sans";
+        }
+        
+    }
+}
+
+
+/* Llama a Producto */
+.ProductoLink {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 5% 0;
+    }
+    .ImgExplora {
+        display: flex;
+        justify-content: center;
+        a {
+            width: 50%;
+            height: auto;
+            img {
+                margin: 0 auto 40% auto;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    
+    .TituloExplora:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+    }
+}
