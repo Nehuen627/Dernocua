@@ -509,6 +509,8 @@ footer .footer-bottom p span a {
 }
 
 .GridContainer {
+  max-width: 100%;
+  overflow-x: hidden;
   width: 100%;
   margin: 0 auto 20% auto;
   max-width: 1240px;
